@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Bauchdeckenstraffung">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dff8fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#073f72" flood-opacity=".13"/></filter></defs>
+<rect width="900" height="620" fill="url(#g)"/>
+<circle cx="145" cy="98" r="180" fill="#12a7a7" opacity=".10"/>
+<circle cx="780" cy="512" r="230" fill="#073f72" opacity=".08"/>
+<g filter="url(#s)"><path d="M425 120 C386 174,382 260,421 330 C451 383,501 383,531 330 C570 260,566 174,527 120" fill="white" opacity=".76"/>
+<path d="M421 151 C462 183,490 183,531 151" fill="none" stroke="#073f72" stroke-width="8" opacity=".45"/>
+<path d="M410 323 C456 354,501 354,543 323" fill="none" stroke="#12a7a7" stroke-width="8" opacity=".6"/></g>
+<path d="M130 484 C260 404,372 502,514 430 C641 365,699 431,786 372" fill="none" stroke="#12a7a7" stroke-width="5" opacity=".38" stroke-linecap="round"/>
+<text x="76" y="122" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="5" fill="#12a7a7">KOERPER</text>
+<text x="76" y="170" font-family="Playfair Display, Georgia, serif" font-size="56" font-weight="700" fill="#073f72">Bauchdeckenstraffung</text>
+</svg>
