@@ -1,0 +1,67 @@
+Bildpaket Privatpraxis Dr. Dolderer – alle Dateien als .jpg
+Alle Dateien liegen flach ohne Unterordner und können direkt ins GitHub-Repository hochgeladen werden.
+
+hero.jpg – Natürliche Schönheit: Spitzenmedizin, Präzision und ein ruhiges Praxisambiente.
+prof-dolderer-hero.jpg – Prof. Dr. Jürgen Dolderer: Akademische Expertise und langjährige chirurgische Erfahrung.
+leistung-aesthetisch.jpg – Plastische & Ästhetische Chirurgie: Natürliche Proportionen, individuelle Beratung und Präzision.
+leistung-rekonstruktiv.jpg – Rekonstruktive Operationen: Wiederherstellung von Form, Funktion und Lebensqualität.
+leistung-handchirurgie.jpg – Handchirurgie: Funktion, Feingefühl und präzise chirurgische Behandlung.
+leistung-maenner.jpg – Operationen für Männer: Diskrete ästhetische und rekonstruktive Behandlungen.
+praxis-atmosphaere.jpg – Praxisatmosphäre: Helle, ruhige Räume für diskrete Beratung.
+beratung-patient.jpg – Persönliche Beratung: Individuelle Aufklärung und verantwortungsvolle Planung.
+dr-dolderer.jpg – Prof. Dr. Jürgen Dolderer: Portrait für die Personenseite.
+dr-dolderer-arbeit.jpg – Medizinische Arbeit: Beratung, Präzision und universitäre Haltung.
+akademie-lehre.jpg – Akademie & Lehre: Universitäre Medizin, Wissen und Erfahrung.
+forschung-regenerative-medizin.jpg – Regenerative Medizin: Forschung, Innovation und moderne Verfahren.
+lidstraffung.jpg – Lidstraffung: Augenpartie, Frische und ein natürlicher Blick.
+facelift.jpg – Facelift: Harmonische Konturen und natürliche Ausstrahlung.
+nasenkorrektur.jpg – Nasenkorrektur: Profil, Balance und individuelle Gesichtsproportionen.
+botox.jpg – Botox: Minimalinvasive Behandlung mit präziser Dosierung.
+hyaluron-filler.jpg – Hyaluron / Filler: Sanfter Volumenaufbau und natürliche Konturen.
+hautqualitaet.jpg – Hautqualität: Feine Hautstruktur, Frische und Regeneration.
+biostimulation.jpg – Biostimulation: Regenerative Impulse für Hautqualität und Spannkraft.
+regenerative-medizin.jpg – Regenerative Medizin: Innovative Verfahren zur Geweberegeneration.
+fettabsaugung.jpg – Fettabsaugung: Körperkonturierung und harmonische Proportionen.
+bauchdeckenstraffung.jpg – Bauchdeckenstraffung: Form, Straffung und natürliche Körperkontur.
+brustchirurgie.jpg – Brustchirurgie: Seriöse Beratung und harmonische Proportionen.
+bruststraffung.jpg – Bruststraffung: Ästhetische Brustform und natürliche Silhouette.
+rekonstruktive-mikrochirurgie.jpg – Rekonstruktive Mikrochirurgie: Präzision unter dem Mikroskop.
+tumorchirurgie.jpg – Tumorchirurgie: Sorgfältige Planung und rekonstruktive Sicherheit.
+brustrekonstruktion.jpg – Brustrekonstruktion: Wiederherstellung mit Einfühlungsvermögen und Präzision.
+handchirurgie-behandlung.jpg – Handchirurgie: Behandlung von Funktion, Beweglichkeit und Belastbarkeit.
+operationen-fuer-maenner.jpg – Operationen für Männer: Diskrete Behandlungskonzepte für Männer.
+aesthetische-plastische-chirurgie.jpg – Ästhetische & Plastische Chirurgie: Natürlichkeit, Sicherheit und chirurgische Präzision.
+rekonstruktive-chirurgie.jpg – Rekonstruktive Chirurgie: Wiederherstellung nach Erkrankung, Unfall oder Operation.
+handchirurgie.jpg – Handchirurgie: Spezialisierte Behandlung der Hand.
+operationen-maenner.jpg – Operationen für Männer: Ästhetische und rekonstruktive Optionen für Männer.
+news-header.jpg – News & Einblicke: Aktuelles aus Praxis, Forschung und Engagement.
+news-regenerative.jpg – Regenerative Medizin: Innovative Verfahren und wissenschaftliche Entwicklung.
+news-beratung.jpg – Beratung & Sicherheit: Aufklärung, Erwartungen und verantwortungsvolle Entscheidung.
+news-humanitaer.jpg – Humanitäres Engagement: Medizinische Hilfe und internationale Zusammenarbeit.
+humanitaere-projekte.jpg – Humanitäre Projekte: Fachwissen, Verantwortung und Hilfe vor Ort.
+interplast-engagement.jpg – INTERPLAST Engagement: Humanitäre plastisch-chirurgische Hilfe.
+humanitaer-team.jpg – Teamarbeit: Medizinische Zusammenarbeit und Wissenstransfer.
+humanitaer-behandlung.jpg – Behandlung & Hilfe: Respektvolle Versorgung und medizinische Unterstützung.
+auszeichnungen-header.jpg – Auszeichnungen: Akademisches Profil, Fachlichkeit und Anerkennung.
+kontakt.jpg – Kontakt: Diskrete Kontaktaufnahme und persönliche Beratung.
+termin.jpg – Termin: Beratungstermin vereinbaren.
+praxis-empfang.jpg – Empfang: Heller, ruhiger Empfangsbereich.
+praxis-raum.jpg – Praxisraum: Moderner Behandlungs- und Beratungsraum.
+pattern-medical-lines.jpg – Medizinische Linien: Dezentes Linienmuster für Hintergründe.
+pattern-soft-gradient.jpg – Soft Gradient: Weicher Weiß-Blau-Türkis Verlauf.
+pattern-cellular.jpg – Regenerative Struktur: Abstraktes Zellmuster.
+pattern-contour-face.jpg – Gesichtskontur: Feine ästhetische Konturlinie.
+pattern-hand-lines.jpg – Handlinien: Abstraktes Muster für Handchirurgie.
+logo-dgpraec.jpg – Logo/Platzhalter: DGPRÄC
+logo-isaps.jpg – Logo/Platzhalter: ISAPS
+logo-euraps.jpg – Logo/Platzhalter: EURAPS
+logo-interplast.jpg – Logo/Platzhalter: INTERPLAST
+logo-university.jpg – Logo/Platzhalter: UNIVERSITY
+logo-surgery-board.jpg – Logo/Platzhalter: SURGERY BOARD
+logo-regenerative.jpg – Logo/Platzhalter: REGEN MED
+logo-hand-surgery.jpg – Logo/Platzhalter: HAND SURGERY
+logo-microsurgery.jpg – Logo/Platzhalter: MICRO SURGERY
+logo-medical-excellence.jpg – Logo/Platzhalter: MEDICAL EXCELLENCE
+logo-instagram.jpg – Logo/Platzhalter: Instagram
+logo-linkedin.jpg – Logo/Platzhalter: LinkedIn
+logo-youtube.jpg – Logo/Platzhalter: YouTube
