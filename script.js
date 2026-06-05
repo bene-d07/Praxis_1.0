@@ -120,3 +120,20 @@ document.querySelectorAll('.cv-acc').forEach(btn=>btn.addEventListener('click',(
     });
   });
 })();
+
+// Mobile-Sicherheitsfix: Auf Handys werden Behandlungskarten ohne Hover-Abhängigkeit sichtbar initialisiert.
+(function(){
+  function ensureMobileTreatmentsVisible(){
+    if(!window.matchMedia('(max-width: 760px)').matches) return;
+    const cards = document.querySelectorAll('.treatment-hover[data-cat]');
+    if(!cards.length) return;
+    const activeFilter = document.querySelector('.filter button.active');
+    const current = activeFilter ? activeFilter.dataset.filter : 'all';
+    if(!current || current === 'all'){
+      cards.forEach(card => card.hidden = false);
+    }
+  }
+  document.addEventListener('DOMContentLoaded', ensureMobileTreatmentsVisible);
+  window.addEventListener('resize', ensureMobileTreatmentsVisible);
+  ensureMobileTreatmentsVisible();
+})();

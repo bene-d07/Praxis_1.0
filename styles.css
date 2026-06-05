@@ -713,3 +713,93 @@ input:focus, select:focus, textarea:focus, button:focus-visible, a:focus-visible
   .page-hero{padding:42px 18px}.page-hero h1{font-size:clamp(2.25rem,11vw,3.5rem)}.lead{font-size:1rem}.mobile-action-bar{grid-template-columns:1fr 1fr 1fr}.mobile-action-bar a{font-size:.86rem}.floating-appointment{display:none!important}
   .footer-grid{grid-template-columns:1fr!important}.site-footer{padding-bottom:100px}
 }
+
+/* === FINAL FIX: Behandlungen auf Handy sichtbar ===
+   Mobile Geräte haben keinen zuverlässigen Hover. Deshalb werden Bild und Text
+   unter 760px immer sichtbar dargestellt. Diese Regeln stehen bewusst ganz am
+   Ende und überschreiben alle älteren Treatment-Hover-Regeln. */
+@media (max-width: 760px), (hover: none) and (pointer: coarse) {
+  .cards-section .treatment-grid,
+  .treatment-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  .treatment-hover,
+  article.treatment-hover {
+    display: block !important;
+    position: relative !important;
+    min-height: 0 !important;
+    height: auto !important;
+    overflow: hidden !important;
+    border-radius: 24px !important;
+    background: #fff !important;
+    border: 1px solid var(--line) !important;
+    box-shadow: 0 14px 38px rgba(7,63,115,.08) !important;
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+  }
+
+  .treatment-hover[hidden] {
+    display: none !important;
+  }
+
+  .treatment-hover img {
+    position: relative !important;
+    inset: auto !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 4 / 3 !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    opacity: 1 !important;
+    transform: none !important;
+    z-index: 1 !important;
+    border-radius: 0 !important;
+  }
+
+  .treatment-hover:hover img,
+  .treatment-hover:focus-within img {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .treatment-reveal {
+    position: relative !important;
+    inset: auto !important;
+    display: block !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 20px !important;
+    z-index: 2 !important;
+    background: #fff !important;
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+  }
+
+  .treatment-reveal h3 {
+    font-size: 1.45rem !important;
+    margin: 8px 0 6px !important;
+  }
+
+  .treatment-reveal p {
+    display: block !important;
+    margin: 0 0 14px !important;
+    color: var(--muted) !important;
+    line-height: 1.55 !important;
+  }
+
+  .treatment-reveal a {
+    display: inline-flex !important;
+    align-items: center !important;
+    min-height: 44px !important;
+    color: var(--blue) !important;
+    font-weight: 850 !important;
+  }
+}
