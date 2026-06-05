@@ -1,32 +1,19 @@
-# Privatpraxis Dr. Dolderer – Website
+# Privatpraxis Dr. Dolderer – flache GitHub-Pages-Version
 
-Dieses Repository enthält den Quellcode der Website für die **Privatpraxis Dr. Dolderer**. Die Seiten wurden im Rahmen eines Designkonzeptes entwickelt und spiegeln eine moderne, medizinisch-seriöse Ästhetik wider.
+Diese ZIP ist ohne Unterordner aufgebaut. Für GitHub Pages einfach alle Dateien direkt in das Repository-Root hochladen.
 
-## Struktur
+## Enthalten
+- index.html
+- dr-dolderer.html
+- behandlungen.html
+- auszeichnungen.html
+- humanitaere-projekte.html
+- kontakt.html
+- termin.html
+- styles.css
+- hero.svg / doctor.svg / treatment.svg / project.svg
 
-```
-privatpraxis-github-site/
-│
-├── index.html                # Startseite
-├── dr-dolderer.html          # Über Dr. Dolderer
-├── behandlungen.html         # Behandlungsübersicht
-├── auszeichnungen.html       # Akademische Auszeichnungen & Mitgliedschaften
-├── humanitaere-projekte.html # Humanitäre Projekte
-├── kontakt.html              # Kontaktinformationen & Formular
-├── termin.html               # Terminbuchung
-├── css/
-│   └── styles.css            # Gemeinsame Stile
-└── images/
-    ├── hero.png              # Hero-Bild für mehrere Seiten
-    └── dr-dolderer.png       # Illustration von Dr. Dolderer
-```
+## Wichtig
+Kontakt- und Terminformular sind statisch und öffnen das E-Mail-Programm. Für echte Formularübermittlung muss ein Formularanbieter oder Backend angebunden werden.
 
-## Nutzung
-
-Öffnen Sie die `index.html` in Ihrem Browser, um die Website lokal zu betrachten. Die Navigation führt Sie zu den weiteren Seiten. Es ist kein Backend integriert – Kontakt‑ und Terminformular sind statisch und senden keine Daten ab.
-
-## Hinweise
-
-- Die Bilder wurden generiert und dienen als Platzhalter. In einem produktiven Umfeld sollten professionelle Fotos eingesetzt werden.
-- Die Website ist responsive und passt sich gängigen Bildschirmgrößen an.
-- Bei Fragen oder Erweiterungswünschen können Sie sich gerne an den Autor wenden.
+Bitte echte Adresse, Telefonnummer, Fachgesellschaften, Auszeichnungen, akademische Stationen und rechtliche Seiten vor Veröffentlichung ergänzen.
