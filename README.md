@@ -21,3 +21,7 @@ Die Website verwendet bewusst mehrfach dieselben Bilder, wo es inhaltlich sinnvo
 ## Neue professionelle Bereiche
 
 Ergänzt wurden Patienteninformationen, FAQ, Wissenschaft & Lehre, Behandlungsfinder, Schnelleinstieg, Sicherheitsbereich, Scroll-Reveal-Animationen, Mobile-Bottom-Bar und Hero-Bildwechsel. Die ZIP enthält bewusst keine JPG-Dateien; vorhandene Bilder im Repository bleiben bestehen.
+
+
+## Design-Update
+Diese Version übernimmt die ruhigere Design-Systematik aus dem Designguide: Cormorant Garamond + Inter, Off-White/Anthrazit/Teal-Farbwelt, reduzierte Karten, feinere Linien, weniger Schatten, klare Abstände und dezente Hover-Zustände.
