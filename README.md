@@ -13,3 +13,6 @@ Alle Dateien direkt in das Hauptverzeichnis des GitHub-Repositories hochladen un
 - Impressum und Datenschutz rechtlich prüfen
 - fachliche Angaben, CV, Mitgliedschaften und Auszeichnungen mit den realen Daten abgleichen
 - Platzhalterbilder bei Bedarf durch echte Praxis- und Portraitfotos ersetzen
+
+
+Ergänzt: Für jede Behandlung gibt es eine eigene Detailseite mit Überblick, Key Facts, Ablauf und Rücklink zur Behandlungsübersicht.
