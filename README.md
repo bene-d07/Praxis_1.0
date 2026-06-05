@@ -1,18 +1,23 @@
-# Privatpraxis Prof. Dr. Jürgen Dolderer – Website
+# Privatpraxis Dr. Dolderer – Website
 
-Diese Version ist für GitHub Pages vorbereitet und nutzt eine flache Struktur ohne Unterordner.
+Diese ZIP enthält die vollständige Website als flache GitHub-Pages-Struktur **ohne Bilddateien**.
 
-## Upload
+## Nutzung
 
-Alle Dateien direkt in das Hauptverzeichnis des GitHub-Repositories hochladen und vorhandene Dateien ersetzen.
+Alle Dateien direkt ins Hauptverzeichnis des GitHub-Repositories hochladen. Die benötigten Bilder müssen separat ebenfalls direkt ins Hauptverzeichnis gelegt werden.
 
-## Vor Veröffentlichung prüfen
+## Bilder
 
-- echte Adresse, Telefonnummer und E-Mail
-- echte Social-Media-Profile
-- Impressum und Datenschutz rechtlich prüfen
-- fachliche Angaben, CV, Mitgliedschaften und Auszeichnungen mit den realen Daten abgleichen
-- Platzhalterbilder bei Bedarf durch echte Praxis- und Portraitfotos ersetzen
+Die Website verwendet bewusst mehrfach dieselben Bilder, wo es inhaltlich sinnvoll ist, damit die Seite ruhiger, professioneller und leichter zu pflegen bleibt. Die benötigten Dateinamen stehen in `BILDER_NICHT_ENTHALTEN_README.txt`.
+
+## Wichtig
+
+- Keine Unterordner verwenden.
+- Bilddateien exakt so benennen wie angegeben.
+- Alle Bilder als `.jpg` speichern.
+- Echte Praxisdaten, Impressum und Datenschutz vor Veröffentlichung rechtlich prüfen lassen.
 
 
-Ergänzt: Für jede Behandlung gibt es eine eigene Detailseite mit Überblick, Key Facts, Ablauf und Rücklink zur Behandlungsübersicht.
+## Neue professionelle Bereiche
+
+Ergänzt wurden Patienteninformationen, FAQ, Wissenschaft & Lehre, Behandlungsfinder, Schnelleinstieg, Sicherheitsbereich, Scroll-Reveal-Animationen, Mobile-Bottom-Bar und Hero-Bildwechsel. Die ZIP enthält bewusst keine JPG-Dateien; vorhandene Bilder im Repository bleiben bestehen.

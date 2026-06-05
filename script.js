@@ -50,3 +50,50 @@ document.querySelectorAll('.cv-acc').forEach(btn=>btn.addEventListener('click',(
 
   goTo(0);
 })();
+
+
+// Scroll-Reveal: dezente Einblendung von Abschnitten, Karten und der Person-Timeline
+(function(){
+  const items = Array.from(document.querySelectorAll('section, .why-grid article, .finder-grid a, .news-grid article, .person-timeline article, .spectrum-feature-card, .specialty-depth'));
+  items.forEach(el => el.classList.add('reveal'));
+  if(!('IntersectionObserver' in window)){
+    items.forEach(el => el.classList.add('reveal-visible'));
+    return;
+  }
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('reveal-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  items.forEach(el=>observer.observe(el));
+})();
+
+
+// Aktiver Menüpunkt: wird automatisch anhand der aktuellen Datei gesetzt
+(function(){
+  const current = (location.pathname.split('/').pop() || 'index.html');
+  document.querySelectorAll('a[href]').forEach(a=>{
+    const href = a.getAttribute('href');
+    if(!href || href.startsWith('http') || href.startsWith('tel:') || href.startsWith('mailto:') || href.startsWith('#')) return;
+    const target = href.split('#')[0];
+    if(target === current){
+      a.classList.add('active-link');
+      if(a.closest('.side-menu')) a.setAttribute('aria-current','page');
+    }
+  });
+})();
+
+// Ruhigeres Akkordeon-Verhalten: nur ein geöffneter Bereich pro Gruppe, wenn data-single gesetzt ist
+(function(){
+  document.querySelectorAll('[data-single-accordion]').forEach(group=>{
+    group.querySelectorAll('.accordion button, .cv-acc').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        group.querySelectorAll('.open').forEach(open=>{ if(open !== btn && open !== btn.parentElement) open.classList.remove('open'); });
+        group.querySelectorAll('.show').forEach(show=>{ if(show !== btn.nextElementSibling) show.classList.remove('show'); });
+      });
+    });
+  });
+})();
