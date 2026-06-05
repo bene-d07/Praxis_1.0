@@ -1,13 +1,14 @@
-# Privatpraxis Dr. Dolderer – GitHub Pages Flat Version
+# Privatpraxis Prof. Dr. Jürgen Dolderer – professionelle GitHub-Pages-Version
 
-Alle Dateien liegen ohne Unterordner direkt im Repository-Root.
+Alle Dateien liegen ohne Unterordner im Hauptverzeichnis. Für GitHub Pages einfach den kompletten Inhalt dieser ZIP direkt ins Repository-Root hochladen.
 
-## Neu in dieser Version
-- Drei-Striche-Menü rechts oben im Header
-- Off-Canvas-Seitenmenü fährt von rechts ein und lässt sich wieder schließen
-- Obere Navigation reduziert auf Dr. Dolderer, Behandlungen, News und Kontakt
-- News-Übersicht mit drei Beispiel-Blöcken
-- Drei vollständige News-Detailseiten mit Bildbereich und Artikeltext
+Neu ergänzt:
+- Off-Canvas-Menü rechts über Drei-Striche-Button
+- umfangreiche Texte auf allen Seiten
+- professionelle Patient-Journey und Sicherheitskommunikation
+- News-Übersicht mit drei Beispielartikeln und Detailseiten
+- Impressum- und Datenschutz-Platzhalter
+- statisches Kontakt- und Terminformular
+- responsive Design
 
-## Hochladen
-Alle Dateien aus der ZIP direkt ins Hauptverzeichnis des GitHub-Repositories laden und vorhandene Dateien ersetzen.
+Wichtig: Impressum, Datenschutz, konkrete Auszeichnungen, Mitgliedschaften, Adresse und Kontaktdaten vor Veröffentlichung juristisch und fachlich prüfen.
