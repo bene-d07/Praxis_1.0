@@ -97,3 +97,26 @@ document.querySelectorAll('.cv-acc').forEach(btn=>btn.addEventListener('click',(
     });
   });
 })();
+
+
+// CV-Akkordeon: immer nur ein Bereich geöffnet
+(function(){
+  document.querySelectorAll('.cv-accordion-card').forEach(group=>{
+    group.querySelectorAll('.cv-acc').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        const panel = btn.nextElementSibling;
+        const willOpen = !btn.classList.contains('open') || !(panel && panel.classList.contains('show'));
+        group.querySelectorAll('.cv-acc').forEach(other=>{
+          if(other !== btn) other.classList.remove('open');
+        });
+        group.querySelectorAll('.cv-panel').forEach(otherPanel=>{
+          if(otherPanel !== panel) otherPanel.classList.remove('show');
+        });
+        if(willOpen){
+          btn.classList.add('open');
+          if(panel) panel.classList.add('show');
+        }
+      });
+    });
+  });
+})();
