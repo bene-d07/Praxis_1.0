@@ -1,19 +1,17 @@
-# Privatpraxis Dr. Dolderer – flache GitHub-Pages-Version
+# Privatpraxis Dr. Dolderer – GitHub Pages Version
 
-Diese ZIP ist ohne Unterordner aufgebaut. Für GitHub Pages einfach alle Dateien direkt in das Repository-Root hochladen.
+Alle Dateien liegen absichtlich ohne Unterordner im Hauptverzeichnis. Für GitHub Pages einfach den kompletten Inhalt dieser ZIP in das Repository-Root hochladen.
 
-## Enthalten
+Neue Struktur:
 - index.html
 - dr-dolderer.html
-- behandlungen.html
-- auszeichnungen.html
-- humanitaere-projekte.html
+- aesthetische-plastische-chirurgie.html
+- rekonstruktive-chirurgie.html
+- handchirurgie.html
+- news.html
 - kontakt.html
+- humanitaere-projekte.html
+- behandlungen.html
 - termin.html
 - styles.css
-- hero.svg / doctor.svg / treatment.svg / project.svg
-
-## Wichtig
-Kontakt- und Terminformular sind statisch und öffnen das E-Mail-Programm. Für echte Formularübermittlung muss ein Formularanbieter oder Backend angebunden werden.
-
-Bitte echte Adresse, Telefonnummer, Fachgesellschaften, Auszeichnungen, akademische Stationen und rechtliche Seiten vor Veröffentlichung ergänzen.
+- SVG-Bilddateien
