@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Auszeichnungen & Akademie">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f8fbfc"/><stop offset="0.52" stop-color="#dff4f2"/><stop offset="1" stop-color="#dcecff"/></linearGradient><radialGradient id="r" cx="65%" cy="35%" r="55%"><stop stop-color="#0A4E8C" stop-opacity=".22"/><stop offset="1" stop-color="#0A4E8C" stop-opacity="0"/></radialGradient></defs>
+  <rect width="900" height="620" rx="42" fill="url(#g)"/><rect width="900" height="620" rx="42" fill="url(#r)"/>
+  <path d="M80 460 C230 350 315 390 430 275 S640 150 820 236" fill="none" stroke="#0A4E8C" stroke-width="7" stroke-linecap="round" opacity=".42"/>
+  <path d="M116 132 H784 M116 494 H784" stroke="#ffffff" stroke-width="2" opacity=".75"/>
+  <circle cx="274" cy="238" r="92" fill="#fff" opacity=".78"/><circle cx="620" cy="366" r="128" fill="#fff" opacity=".54"/>
+  <g fill="none" stroke="#123040" opacity=".52" stroke-width="3"><path d="M314 232c44-56 116-56 160 0"/><path d="M362 279c38 22 86 20 119-4"/><path d="M558 312c38 3 72 22 94 52"/></g>
+  <text x="80" y="96" font-family="Inter, Arial" font-size="26" font-weight="700" fill="#0b3551">Auszeichnungen & Akademie</text>
+</svg>
