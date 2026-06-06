@@ -189,15 +189,16 @@ function initScrollSyncedTimeline(){
 
     const rect = section.getBoundingClientRect();
     const viewport = window.innerHeight || document.documentElement.clientHeight;
-    const start = viewport * 0.72;
-    const end = -rect.height + viewport * 0.34;
+    const start = viewport * 0.86;
+    const end = -rect.height + viewport * 0.42;
     const progress = clamp((start - rect.top) / (start - end), 0, 1);
 
     track.style.setProperty('--timeline-progress', (progress * 100).toFixed(2) + '%');
 
-    const currentIndex = clamp(Math.floor(progress * items.length), 0, items.length - 1);
+    const revealLead = 0.42;
+    const currentIndex = clamp(Math.floor((progress * items.length) + revealLead), 0, items.length - 1);
     items.forEach((item, index)=>{
-      const local = clamp((progress * items.length) - index, 0, 1);
+      const local = clamp((progress * items.length) - index + revealLead, 0, 1);
       item.classList.toggle('is-passed', local >= .98);
       item.classList.toggle('is-current', index === currentIndex && progress > .02 && progress < .995);
       item.style.opacity = (0.34 + local * 0.66).toFixed(3);
