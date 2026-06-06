@@ -943,3 +943,63 @@ input:focus, select:focus, textarea:focus, button:focus-visible, a:focus-visible
   .treatment-reveal p{display:block!important;margin:0 0 14px!important;line-height:1.55!important;color:var(--muted)!important;}
   .treatment-reveal a{display:inline-flex!important;align-items:center!important;min-height:44px!important;color:var(--blue)!important;font-weight:850!important;}
 }
+
+/* Scroll-synchronisierte CV-Timeline auf der Prof.-Dolderer-Seite */
+.person-timeline.scroll-synced{
+  --timeline-progress:0%;
+}
+.person-timeline.scroll-synced .vertical-cv.yearline{
+  position:relative;
+}
+.person-timeline.scroll-synced .vertical-cv.yearline:before{
+  background:var(--line, rgba(223,232,238,.95)) !important;
+  opacity:1;
+}
+.person-timeline.scroll-synced .vertical-cv.yearline:after{
+  content:'';
+  position:absolute;
+  left:11px;
+  top:8px;
+  width:2px;
+  height:var(--timeline-progress);
+  max-height:calc(100% - 16px);
+  background:linear-gradient(180deg,var(--blue),var(--turq));
+  border-radius:99px;
+  transition:height .08s linear;
+  z-index:0;
+}
+.person-timeline.scroll-synced .vertical-cv.yearline article{
+  position:relative;
+  z-index:1;
+  opacity:.34;
+  transform:translateY(18px);
+  transition:opacity .12s linear, transform .12s linear, filter .12s linear;
+  filter:saturate(.7);
+}
+.person-timeline.scroll-synced .vertical-cv.yearline article.is-current,
+.person-timeline.scroll-synced .vertical-cv.yearline article.is-passed{
+  opacity:1;
+  transform:translateY(0);
+  filter:saturate(1);
+}
+.person-timeline.scroll-synced .vertical-cv.yearline article>span{
+  transition:border-color .12s linear, background .12s linear, transform .12s linear, box-shadow .12s linear;
+}
+.person-timeline.scroll-synced .vertical-cv.yearline article.is-passed>span,
+.person-timeline.scroll-synced .vertical-cv.yearline article.is-current>span{
+  border-color:var(--turq);
+  background:var(--turq);
+  transform:rotate(45deg) scale(1.08);
+  box-shadow:0 0 0 6px rgba(0,166,166,.12),0 8px 22px rgba(7,63,115,.18);
+}
+.person-timeline.scroll-synced .vertical-cv.yearline article.is-current h3{
+  color:var(--blue);
+}
+@media(max-width:980px){
+  .person-timeline.scroll-synced .vertical-cv.yearline:after{height:100%;}
+  .person-timeline.scroll-synced .vertical-cv.yearline article{opacity:1;transform:none;filter:none;}
+}
+@media (prefers-reduced-motion: reduce){
+  .person-timeline.scroll-synced .vertical-cv.yearline:after{height:100%;transition:none;}
+  .person-timeline.scroll-synced .vertical-cv.yearline article{opacity:1;transform:none;transition:none;filter:none;}
+}
