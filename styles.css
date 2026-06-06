@@ -1285,3 +1285,115 @@ input:focus, select:focus, textarea:focus, button:focus-visible, a:focus-visible
     aspect-ratio:4 / 3;
   }
 }
+
+
+/* =========================================================
+   FINAL FIX: Startseiten-Karussell Proportionen
+   Die vier Carousel-Bilder sind 1600x1100 px. Der Bildrahmen
+   nutzt deshalb exakt 16/11, damit nichts gequetscht wirkt.
+   ========================================================= */
+.spectrum-carousel-section{
+  overflow:hidden;
+}
+.spectrum-carousel{
+  width:min(1120px, calc(100vw - 64px));
+  max-width:1120px;
+  margin:2.2rem auto 0;
+  padding:0 4.25rem 2.25rem;
+}
+.carousel-window{
+  width:100%;
+  overflow:hidden;
+  border-radius:28px;
+  background:#fff;
+}
+.carousel-track{
+  display:flex;
+  align-items:stretch;
+}
+.spectrum-slide{
+  flex:0 0 100%;
+  width:100%;
+  min-width:100%;
+}
+.spectrum-feature-card{
+  display:grid !important;
+  grid-template-columns:minmax(0, 58%) minmax(320px, 42%) !important;
+  min-height:0 !important;
+  height:auto !important;
+  align-items:stretch;
+  overflow:hidden;
+  background:#fff;
+}
+.spectrum-feature-image{
+  width:100%;
+  height:auto !important;
+  min-height:0 !important;
+  aspect-ratio:16 / 11 !important;
+  overflow:hidden;
+  background:#f8f7f5;
+  align-self:stretch;
+}
+.spectrum-feature-image img{
+  display:block;
+  width:100% !important;
+  height:100% !important;
+  min-height:0 !important;
+  aspect-ratio:16 / 11 !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  transform:none !important;
+}
+.spectrum-feature-card:hover .spectrum-feature-image img{
+  transform:scale(1.025) !important;
+}
+.spectrum-feature-content{
+  min-height:0;
+  padding:clamp(2rem, 3vw, 3rem) !important;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.carousel-control{
+  top:calc(50% - 1.1rem);
+}
+.carousel-control.prev{left:.6rem !important;}
+.carousel-control.next{right:.6rem !important;}
+@media (max-width: 980px){
+  .spectrum-carousel{
+    width:min(720px, calc(100vw - 36px));
+    padding:0 0 2.1rem;
+  }
+  .spectrum-feature-card{
+    grid-template-columns:1fr !important;
+  }
+  .spectrum-feature-image{
+    aspect-ratio:16 / 11 !important;
+  }
+  .spectrum-feature-image img{
+    aspect-ratio:16 / 11 !important;
+  }
+  .spectrum-feature-content{
+    padding:1.65rem !important;
+  }
+  .carousel-control{display:none !important;}
+}
+@media (max-width: 520px){
+  .spectrum-carousel{
+    width:calc(100vw - 28px);
+    margin-top:1.4rem;
+  }
+  .carousel-window{
+    border-radius:22px;
+  }
+  .spectrum-feature-image,
+  .spectrum-feature-image img{
+    aspect-ratio:16 / 11 !important;
+  }
+  .spectrum-feature-content{
+    padding:1.2rem !important;
+  }
+  .spectrum-feature-content h3{
+    font-size:clamp(1.55rem, 7.2vw, 2.15rem) !important;
+  }
+}
