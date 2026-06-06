@@ -1093,3 +1093,114 @@ input:focus, select:focus, textarea:focus, button:focus-visible, a:focus-visible
   .interplast-logo{margin-bottom:1rem;}
   .why-portrait{max-width:260px;}
 }
+
+/* === Sichtbare Hintergrundmuster aus der Bildliste ===
+   Die Muster werden bewusst sehr weich überlagert, damit Text und Bilder ruhig bleiben. */
+.hero.soft-pattern,
+.page-hero.soft-pattern,
+.article-hero.soft-pattern,
+.split.soft-pattern,
+.cards-section.soft-pattern,
+.direct-contact-wide.soft-pattern{
+  background-image:
+    linear-gradient(135deg, rgba(255,255,255,.88), rgba(246,251,252,.86)),
+    url("pattern-medical-lines.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page-hero,
+.article-hero{
+  background-image:
+    linear-gradient(135deg, rgba(255,255,255,.90), rgba(235,247,250,.84)),
+    url("pattern-soft-gradient.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero.luxe.soft-pattern{
+  background-image:
+    radial-gradient(circle at 80% 10%, rgba(0,166,166,.10), transparent 32%),
+    linear-gradient(135deg, rgba(255,255,255,.88), rgba(239,249,250,.84)),
+    url("pattern-soft-gradient.jpg");
+  background-size: auto, cover, cover;
+  background-position: center;
+}
+.aesthetic-bg,
+.page-hero.aesthetic-bg,
+.article-hero.aesthetic-bg,
+.detail-hero.aesthetic-bg,
+.split.aesthetic-bg{
+  background-image:
+    linear-gradient(135deg, rgba(255,255,255,.88), rgba(248,245,239,.78)),
+    url("pattern-contour-face.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.regenerative-bg,
+.page-hero.regenerative-bg,
+.article-hero.regenerative-bg,
+.detail-hero.regenerative-bg,
+.split.regenerative-bg{
+  background-image:
+    linear-gradient(135deg, rgba(255,255,255,.90), rgba(236,249,250,.82)),
+    url("pattern-cellular.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hand-bg,
+.page-hero.hand-bg,
+.article-hero.hand-bg,
+.detail-hero.hand-bg,
+.split.hand-bg{
+  background-image:
+    linear-gradient(135deg, rgba(255,255,255,.92), rgba(247,250,252,.86)),
+    url("pattern-hand-lines.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* Overrides für die Hero-Pseudoelemente, damit die Hintergrundbilder nicht von alten Gradients verdeckt werden */
+.treatment-detail-hero.aesthetic-bg::before,
+.treatment-detail-hero.regenerative-bg::before,
+.treatment-detail-hero.hand-bg::before{
+  background: none !important;
+}
+.treatment-detail-hero.aesthetic-bg::after,
+.treatment-detail-hero.regenerative-bg::after,
+.treatment-detail-hero.hand-bg::after{
+  opacity: .45;
+}
+.page-hero.aesthetic-bg::after,
+.page-hero.regenerative-bg::after,
+.page-hero.hand-bg::after,
+.article-hero.aesthetic-bg::after,
+.article-hero.regenerative-bg::after,
+.article-hero.hand-bg::after{
+  opacity:.35;
+}
+/* dezente Pattern-Bänder in Inhaltsbereichen */
+.science-grid,
+.patient-info-grid,
+.publication-list,
+.specialty-depth,
+.safety-focus{
+  position:relative;
+}
+.science-grid::before,
+.patient-info-grid::before,
+.publication-list::before,
+.specialty-depth::before,
+.safety-focus::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background-image:linear-gradient(135deg,rgba(255,255,255,.92),rgba(248,252,253,.84)),url("pattern-medical-lines.jpg");
+  background-size:cover;
+  background-position:center;
+  opacity:.55;
+}
