@@ -1205,235 +1205,88 @@ input:focus, select:focus, textarea:focus, button:focus-visible, a:focus-visible
   opacity:.55;
 }
 
-
-/* Final: Social Media wieder als Inline-SVG, Carousel-Bilder sauber im Kasten */
-.social-links a img,
-.side-social a img{
-  display:none !important;
-}
-.social-links a svg,
-.side-social a svg{
-  display:block;
-}
+/* =========================================================
+   FINAL CAROUSEL LAYOUT FIX
+   Bild füllt den gesamten linken Bereich ohne Verzerrung.
+   Desktop: feste zweispaltige Karte, Bild streckt sich auf Kartenhöhe.
+   Mobile: Bild oben im korrekten 1600x1100-Verhältnis.
+   ========================================================= */
 .spectrum-carousel{
-  max-width:1160px;
+  max-width:1120px;
+  padding:0 4.4rem 2.7rem;
 }
 .carousel-window{
-  border-radius:30px;
+  border-radius:34px;
+  overflow:hidden;
+  background:rgba(255,255,255,.94);
 }
-.spectrum-feature-card{
-  grid-template-columns:minmax(0, 1.22fr) minmax(340px, .78fr);
-  min-height:390px;
+.carousel-track{
   align-items:stretch;
 }
+.spectrum-slide{
+  min-width:100%;
+  display:flex;
+}
+.spectrum-feature-card{
+  width:100%;
+  min-height:460px;
+  display:grid;
+  grid-template-columns:minmax(0,58%) minmax(360px,42%);
+  align-items:stretch;
+  overflow:hidden;
+  border-radius:34px;
+  background:linear-gradient(145deg,#ffffff 0%,#f4fbfc 100%);
+}
 .spectrum-feature-image{
-  min-height:390px;
-  aspect-ratio:16 / 10.6;
-  background:#f8f7f5;
+  position:relative;
+  width:100%;
+  height:100%;
+  min-height:0;
+  align-self:stretch;
+  overflow:hidden;
+  background:#eef4f5;
 }
 .spectrum-feature-image img{
+  position:absolute;
+  inset:0;
   width:100%;
   height:100%;
   object-fit:cover;
   object-position:center center;
+  display:block;
   transform:none;
-  aspect-ratio:auto;
 }
 .spectrum-feature-card:hover .spectrum-feature-image img{
   transform:scale(1.035);
-  filter:saturate(1.04) contrast(1.01);
 }
 .spectrum-feature-content{
-  padding:2.5rem 2.7rem;
+  min-height:460px;
+  padding:clamp(2.3rem,4vw,3.4rem);
 }
-.carousel-control{
-  width:56px;
-  height:56px;
-  border:1px solid rgba(14,122,110,.22);
-  background:rgba(255,255,255,.94);
-  color:var(--teal, #0e7a6e);
-  box-shadow:0 18px 42px rgba(30,33,37,.13);
-}
-.carousel-control.prev{left:1rem;}
-.carousel-control.next{right:1rem;}
-.carousel-control svg{
-  width:30px;
-  height:30px;
-  stroke-width:1.45;
-}
-.carousel-control:hover{
-  background:var(--teal, #0e7a6e);
-  color:#fff;
-  transform:translateY(-50%) scale(1.04);
-}
-@media (max-width: 980px){
+@media (max-width:900px){
+  .spectrum-carousel{
+    padding:0 0 2.4rem;
+  }
   .spectrum-feature-card{
     grid-template-columns:1fr;
     min-height:0;
+    border-radius:26px;
   }
   .spectrum-feature-image{
+    height:auto;
+    aspect-ratio:16/11;
     min-height:0;
-    aspect-ratio:16 / 11;
   }
-  .spectrum-feature-image img{
-    object-fit:cover;
-    object-position:center center;
+  .spectrum-feature-content{
+    min-height:0;
+    padding:2rem;
   }
 }
-@media (max-width: 640px){
+@media (max-width:560px){
   .spectrum-feature-image{
-    aspect-ratio:4 / 3;
-  }
-}
-
-
-/* =========================================================
-   FINAL FIX: Startseiten-Karussell Proportionen
-   Die vier Carousel-Bilder sind 1600x1100 px. Der Bildrahmen
-   nutzt deshalb exakt 16/11, damit nichts gequetscht wirkt.
-   ========================================================= */
-.spectrum-carousel-section{
-  overflow:hidden;
-}
-.spectrum-carousel{
-  width:min(1120px, calc(100vw - 64px));
-  max-width:1120px;
-  margin:2.2rem auto 0;
-  padding:0 4.25rem 2.25rem;
-}
-.carousel-window{
-  width:100%;
-  overflow:hidden;
-  border-radius:28px;
-  background:#fff;
-}
-.carousel-track{
-  display:flex;
-  align-items:stretch;
-}
-.spectrum-slide{
-  flex:0 0 100%;
-  width:100%;
-  min-width:100%;
-}
-.spectrum-feature-card{
-  display:grid !important;
-  grid-template-columns:minmax(0, 58%) minmax(320px, 42%) !important;
-  min-height:0 !important;
-  height:auto !important;
-  align-items:stretch;
-  overflow:hidden;
-  background:#fff;
-}
-.spectrum-feature-image{
-  width:100%;
-  height:auto !important;
-  min-height:0 !important;
-  aspect-ratio:16 / 11 !important;
-  overflow:hidden;
-  background:#f8f7f5;
-  align-self:stretch;
-}
-.spectrum-feature-image img{
-  display:block;
-  width:100% !important;
-  height:100% !important;
-  min-height:0 !important;
-  aspect-ratio:16 / 11 !important;
-  object-fit:cover !important;
-  object-position:center center !important;
-  transform:none !important;
-}
-.spectrum-feature-card:hover .spectrum-feature-image img{
-  transform:scale(1.025) !important;
-}
-.spectrum-feature-content{
-  min-height:0;
-  padding:clamp(2rem, 3vw, 3rem) !important;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-}
-.carousel-control{
-  top:calc(50% - 1.1rem);
-}
-.carousel-control.prev{left:.6rem !important;}
-.carousel-control.next{right:.6rem !important;}
-@media (max-width: 980px){
-  .spectrum-carousel{
-    width:min(720px, calc(100vw - 36px));
-    padding:0 0 2.1rem;
-  }
-  .spectrum-feature-card{
-    grid-template-columns:1fr !important;
-  }
-  .spectrum-feature-image{
-    aspect-ratio:16 / 11 !important;
-  }
-  .spectrum-feature-image img{
-    aspect-ratio:16 / 11 !important;
+    aspect-ratio:4/3;
   }
   .spectrum-feature-content{
-    padding:1.65rem !important;
-  }
-  .carousel-control{display:none !important;}
-}
-@media (max-width: 520px){
-  .spectrum-carousel{
-    width:calc(100vw - 28px);
-    margin-top:1.4rem;
-  }
-  .carousel-window{
-    border-radius:22px;
-  }
-  .spectrum-feature-image,
-  .spectrum-feature-image img{
-    aspect-ratio:16 / 11 !important;
-  }
-  .spectrum-feature-content{
-    padding:1.2rem !important;
-  }
-  .spectrum-feature-content h3{
-    font-size:clamp(1.55rem, 7.2vw, 2.15rem) !important;
-  }
-}
-
-/* =========================================================
-   FINAL PATCH: Karussell-Bild füllt die komplette linke Spalte
-   Problem: Bei Desktop wurde das Bild durch aspect-ratio niedriger
-   als der Textbereich. Dadurch entstand unten ein weißer Rand.
-   Lösung: Desktop = Bildspalte auf volle Kartenhöhe ziehen;
-   Mobile/Tablet = 16:11 Bildverhältnis behalten.
-   ========================================================= */
-@media (min-width: 981px){
-  .spectrum-feature-card{
-    display:grid !important;
-    grid-template-columns:minmax(0, 58%) minmax(320px, 42%) !important;
-    align-items:stretch !important;
-    min-height:455px !important;
-  }
-  .spectrum-feature-image{
-    height:100% !important;
-    min-height:455px !important;
-    aspect-ratio:auto !important;
-    align-self:stretch !important;
-  }
-  .spectrum-feature-image img{
-    width:100% !important;
-    height:100% !important;
-    aspect-ratio:auto !important;
-    object-fit:cover !important;
-    object-position:center center !important;
-    display:block !important;
-  }
-  .spectrum-feature-content{
-    min-height:455px !important;
-  }
-}
-@media (min-width: 981px) and (max-width: 1180px){
-  .spectrum-feature-card,
-  .spectrum-feature-image,
-  .spectrum-feature-content{
-    min-height:430px !important;
+    padding:1.45rem;
   }
 }
