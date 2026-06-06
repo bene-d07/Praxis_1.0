@@ -1397,3 +1397,43 @@ input:focus, select:focus, textarea:focus, button:focus-visible, a:focus-visible
     font-size:clamp(1.55rem, 7.2vw, 2.15rem) !important;
   }
 }
+
+/* =========================================================
+   FINAL PATCH: Karussell-Bild füllt die komplette linke Spalte
+   Problem: Bei Desktop wurde das Bild durch aspect-ratio niedriger
+   als der Textbereich. Dadurch entstand unten ein weißer Rand.
+   Lösung: Desktop = Bildspalte auf volle Kartenhöhe ziehen;
+   Mobile/Tablet = 16:11 Bildverhältnis behalten.
+   ========================================================= */
+@media (min-width: 981px){
+  .spectrum-feature-card{
+    display:grid !important;
+    grid-template-columns:minmax(0, 58%) minmax(320px, 42%) !important;
+    align-items:stretch !important;
+    min-height:455px !important;
+  }
+  .spectrum-feature-image{
+    height:100% !important;
+    min-height:455px !important;
+    aspect-ratio:auto !important;
+    align-self:stretch !important;
+  }
+  .spectrum-feature-image img{
+    width:100% !important;
+    height:100% !important;
+    aspect-ratio:auto !important;
+    object-fit:cover !important;
+    object-position:center center !important;
+    display:block !important;
+  }
+  .spectrum-feature-content{
+    min-height:455px !important;
+  }
+}
+@media (min-width: 981px) and (max-width: 1180px){
+  .spectrum-feature-card,
+  .spectrum-feature-image,
+  .spectrum-feature-content{
+    min-height:430px !important;
+  }
+}
