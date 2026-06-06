@@ -1003,3 +1003,93 @@ input:focus, select:focus, textarea:focus, button:focus-visible, a:focus-visible
   .person-timeline.scroll-synced .vertical-cv.yearline:after{height:100%;transition:none;}
   .person-timeline.scroll-synced .vertical-cv.yearline article{opacity:1;transform:none;transition:none;filter:none;}
 }
+
+/* Bildabgleich: alle Website-Bilder aus der Bildanforderungsliste eingebunden */
+.page-hero.image-hero{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(280px,520px);
+  align-items:center;
+  gap:clamp(24px,4vw,56px);
+}
+.page-hero.image-hero img{
+  width:100%;
+  aspect-ratio:16/10;
+  object-fit:cover;
+  border-radius:var(--r);
+  box-shadow:var(--shadow);
+  position:relative;
+  z-index:1;
+}
+.why-portrait{
+  max-width:360px;
+  margin:1rem auto 2rem;
+  padding:.65rem;
+  border:1px solid rgba(10,78,140,.12);
+  border-radius:32px;
+  background:rgba(255,255,255,.72);
+  box-shadow:0 24px 60px rgba(7,63,115,.08);
+}
+.why-portrait img{
+  width:100%;
+  aspect-ratio:4/5;
+  object-fit:cover;
+  border-radius:24px;
+}
+.person-work-image{
+  margin:1.25rem 0 1.5rem;
+  aspect-ratio:16/10;
+  object-fit:cover;
+}
+.interplast-logo{
+  width:min(180px,38vw);
+  aspect-ratio:8/5;
+  object-fit:cover;
+  border-radius:18px;
+  background:#fff;
+  padding:.3rem;
+  box-shadow:0 14px 28px rgba(0,0,0,.16);
+  flex:0 0 auto;
+}
+.social-links a img,
+.side-social a img{
+  width:20px;
+  height:20px;
+  object-fit:cover;
+  border-radius:6px;
+  flex:0 0 auto;
+}
+.site-footer .social-links a img{
+  filter:none;
+}
+.aesthetic-bg{
+  background-image:linear-gradient(135deg,rgba(255,255,255,.88),rgba(238,248,250,.78)),url("pattern-contour-face.jpg");
+  background-size:cover;
+  background-position:center;
+}
+.soft-pattern{
+  background-image:linear-gradient(180deg,rgba(248,252,253,.92),rgba(255,255,255,.96)),url("pattern-medical-lines.jpg");
+  background-size:cover;
+  background-position:center;
+}
+.regenerative-bg{
+  background-image:linear-gradient(135deg,rgba(255,255,255,.9),rgba(236,249,250,.82)),url("pattern-cellular.jpg");
+  background-size:cover;
+  background-position:center;
+}
+.hand-bg{
+  background-image:linear-gradient(135deg,rgba(255,255,255,.92),rgba(247,250,252,.88)),url("pattern-hand-lines.jpg");
+  background-size:cover;
+  background-position:center;
+}
+.page-hero{
+  background-image:linear-gradient(135deg,rgba(255,255,255,.91),rgba(237,247,249,.88)),url("pattern-soft-gradient.jpg");
+  background-size:cover;
+  background-position:center;
+}
+@media(max-width:760px){
+  .page-hero.image-hero{grid-template-columns:1fr;}
+  .page-hero.image-hero img{aspect-ratio:4/3;}
+  .interplast-cta{display:block;}
+  .interplast-logo{margin-bottom:1rem;}
+  .why-portrait{max-width:260px;}
+}

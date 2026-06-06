@@ -65,3 +65,7 @@ logo-medical-excellence.jpg – Logo/Platzhalter: MEDICAL EXCELLENCE
 logo-instagram.jpg – Logo/Platzhalter: Instagram
 logo-linkedin.jpg – Logo/Platzhalter: LinkedIn
 logo-youtube.jpg – Logo/Platzhalter: YouTube
+Zusätzlich im Code verwendete Sammelbilder:
+- gesichtschirurgie.jpg
+- aesthetische-medizin.jpg
+- koerperchirurgie.jpg
